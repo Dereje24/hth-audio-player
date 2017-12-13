@@ -1,0 +1,8 @@
+.Progress--bar {
+  background-color: gray;
+}
+
+.Progress--bar--meter {
+  background-color: red;
+  height: 30px;
+}
