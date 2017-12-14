@@ -8,14 +8,12 @@ import Footer from '../Footer/Footer';
 import './App.css';
 
 class App extends React.Component {
-
   // get track details here, pass them into the components that need them
-
   render() {
     return (
       <div className="App">
         <Search />
-        <TrackDetails title="Peace Sells, But Who's Buying" artistName="Megadeth" imgSrc=""/>
+        <TrackDetails title="Peace Sells, But Who's Buying" artistName="Megadeth" imgSrc="" />
         <Player />
         <Progress length={2} currentPosition={2} />
         <Footer />

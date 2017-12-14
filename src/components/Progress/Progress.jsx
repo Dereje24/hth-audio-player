@@ -6,7 +6,7 @@ import './Progress.css';
 class Progress extends React.Component {
   renderText1() {
     if (!this.props.text1) {
-      return;
+      return null;
     }
 
     return <div className="Progress--text1">{this.props.text1}</div>;
@@ -14,7 +14,7 @@ class Progress extends React.Component {
 
   renderText2() {
     if (!this.props.text2) {
-      return;
+      return null;
     }
 
     return <div className="Progress--text2">{this.props.text2}</div>;
@@ -27,7 +27,7 @@ class Progress extends React.Component {
       <div className="Progress">
         {this.renderText1()}
         <div className="Progress--bar">
-          <div className="Progress--bar--meter"  style={{width}}></div>
+          <div className="Progress--bar--meter" style={{ width }}></div>
         </div>
         {this.renderText2()}
       </div>

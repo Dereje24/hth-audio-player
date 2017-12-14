@@ -5,7 +5,7 @@ class TrackDetails extends React.Component {
   render() {
     return (
       <div className="TrackDetails">
-        <img src={this.props.imgSrc} />
+        <img src={this.props.imgSrc} alt="music art" />
         <h1 className="TrackDetails--title">{this.props.title}</h1>
         <div className="TrackDetails--artistName">{this.props.artistName}</div>
       </div>
@@ -14,8 +14,8 @@ class TrackDetails extends React.Component {
 }
 
 TrackDetails.propTypes = {
-  title: PropTypes.string,
-  artistName: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  artistName: PropTypes.string.isRequired,
   imgSrc: PropTypes.string
 };
 

@@ -43,12 +43,12 @@ class Player extends React.Component {
           onSkipForwardClick={this.onSkipForwardClick}
         />
         <Sound
-           url=''
-           playStatus='PAUSED'
-           position={0}
-           onPlaying={this.onPlaying}
-           onPause={this.onPause}
-           onFinishedPlaying={this.onFinishedPlaying}
+          url=""
+          playStatus="PAUSED"
+          position={0}
+          onPlaying={this.onPlaying}
+          onPause={this.onPause}
+          onFinishedPlaying={this.onFinishedPlaying}
         />
       </div>
     );
